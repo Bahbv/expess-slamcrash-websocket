@@ -2,9 +2,14 @@
     "name": "socket-chat-example",
     "version": "0.0.1",
     "description": "my first socket.io app",
+    "scripts": {
+        "start": "pm2 start index.js",
+        "dev": "npx supervisor index.js"
+    },
     "dependencies": {
         "crypto-js": "^4.1.1",
         "express": "^4.17.1",
+        "pm2": "^5.1.1",
         "socket.io": "^4.2.0"
     }
 }

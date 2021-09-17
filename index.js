@@ -35,13 +35,11 @@ server.listen(3000, () => {
 
 
 // Do algo
-let hash = "323941329073329";
-
 function bust(){
+    let hash = Math.floor((Math.random() * 1000000000000000000000) + 1000000000000000000).toString();
     return gameResult( '0xc6e1eb510b31e06ed474df13d525fecd8ca81bd371232459ea156668d81c4e49', hash);
 }
-
-
+ 
 // Algo
 const gameResult = (seed, salt) => {
     const nBits = 52; // number of most significant bits to use
